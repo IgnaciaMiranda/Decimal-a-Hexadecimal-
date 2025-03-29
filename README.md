@@ -18,20 +18,20 @@ Utiliza un compilador de C como GCC:
 
 ```bash
 gcc decimal_a_hexadecimal.c -o decimal_a_hexadecimal
+```
 3. Ejecuta el programa
-bash
-Copiar
-Editar
+
+```bash
 ./decimal_a_hexadecimal
+```
 4. Ingresa un número
 El programa te pedirá que ingreses un número decimal y mostrará su equivalente en hexadecimal.
 
 📦 Ejemplo
-yaml
-Copiar
-Editar
+```yaml
 Ingresar un numero: 255
 Hexadecimal: FF
+```
 📌 Notas
 El programa solo admite números enteros no negativos.
 
