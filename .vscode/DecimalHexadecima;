@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int decimal, resto, i = 0;
+    char hexa[20];
+
+    printf("Ingresar un numero: ");
+    scanf("%d", &decimal);
+
+    if (decimal == 0) {
+        printf("0\n");
+        return 0;
+    }
+
+    while (decimal > 0) {
+        resto = decimal % 16;
+
+        if (resto < 10)
+            hexa[i++] = resto + '0';        // Dígitos 0-9
+        else
+            hexa[i++] = resto - 10 + 'A';    // Letras A-F
+
+        decimal /= 16;
+    }
+
+    printf("Hexadecimal: ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%c", hexa[j]);
+    }
+    printf("\n");
+
+    return 0;
+}
